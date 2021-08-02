@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body id="FilecabinetExp" > 
+        <!-- Sources-->
+                <link rel="stylesheet" href="styler.css">
+                <script src= "mainer.js" ></script>
+        <!--The Code-->
+
+        <!--NavBar-->
+        <div class="topnav">
+            <img src="logo.png" class="logo">
+            <h1 id="title-for-home"> <a id="ahometag" href="filecabinet.home.html">Filecabinet</a></h1>
+            <a id="Ext" href="filecabinet.expensetracker.html">Expense Tracker</a>
+            <a id="Int" >Income Tracker</a>
+            <a id="Rec" >Receipts</a>
+            <a id="Abu" href="filecabinet.aboutus.html" >About Us</a>
+            <a id="Login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+        
+        </div>
+    </body>
+    <body>
+        
+
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="avatar.jpg" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+    </body>
+    <body id="abu-main-con" >
+      <h1 id="title-exp">Expense Tracker</h1>
+      <div id="">
+        <div id="receipts-list">
+          <h4>Recent Receipts:</h4>
+            <ul>
+              <li>Receipt 1</li>
+              <li>Receipt 2</li>
+            </ul>
+        </div>
+      </div>
+
+    </body>
+</html>
